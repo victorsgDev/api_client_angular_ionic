@@ -1,0 +1,17 @@
+<div id="container">
+  <ion-item fill="solid">
+    <ion-label position="floating">ID</ion-label>
+    <ion-input placeholder="Introduce el ID" [(ngModel)]="id"></ion-input>
+  </ion-item>
+  <ion-item fill="solid">
+    <ion-label position="floating">Nombre de Tarea</ion-label>
+    <ion-input placeholder="Introduce el Nombre de la Tarea" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item fill="solid">
+    <ion-label position="floating">Descripción</ion-label>
+    <ion-input placeholder="Introduce una descripción" [(ngModel)]="description"></ion-input>
+  </ion-item>
+</div>
+<ion-button expand="block" (click)="createTarea()">Crear Tarea</ion-button>
+<ion-button expand="block" (click)="updateTarea()">Actualizar Tarea</ion-button>
+<ion-button expand="block" (click)="goToTable()" color="tertiary">VISUALIZAR DATOS</ion-button>

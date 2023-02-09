@@ -1,0 +1,7 @@
+{
+  "name": "api_client_hito",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
