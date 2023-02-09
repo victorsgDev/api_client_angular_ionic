@@ -34,7 +34,4 @@ export class FormComponent implements OnInit {
         console.log(res));
   }
 
-  goToTable() {
-
-  }
 }

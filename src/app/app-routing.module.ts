@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'table',
-    loadChildren: () => import('./table/table.module').then( m => m.TablePageModule)
+    loadChildren: () => import('./table/table.module').then(m => m.TablePageModule)
   },
 ];
 

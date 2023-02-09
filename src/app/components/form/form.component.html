@@ -12,6 +12,9 @@
     <ion-input placeholder="Introduce una descripción" [(ngModel)]="description"></ion-input>
   </ion-item>
 </div>
+<br>
 <ion-button expand="block" (click)="createTarea()">Crear Tarea</ion-button>
+<br>
 <ion-button expand="block" (click)="updateTarea()">Actualizar Tarea</ion-button>
-<ion-button expand="block" (click)="goToTable()" color="tertiary">VISUALIZAR DATOS</ion-button>
+<br>
+<ion-button expand="block" color="tertiary" [routerLink]="['/table']" >VISUALIZAR DATOS</ion-button>
