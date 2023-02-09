@@ -1,0 +1,21 @@
+<table class="rwd-table">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Eliminar</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let todo of listTodos">
+    <td data-th="ID">{{todo.id}}</td>
+    <td data-th="Nombre">{{todo.name}}</td>
+    <td data-th="Descripcion">{{todo.description}}</td>
+    <td data-th="Eliminar">
+      <ion-button color="danger" (click)="deleteTodo(todo.id)">Eliminar</ion-button>
+    </td>
+  </tr>
+  </tbody>
+
+</table>
